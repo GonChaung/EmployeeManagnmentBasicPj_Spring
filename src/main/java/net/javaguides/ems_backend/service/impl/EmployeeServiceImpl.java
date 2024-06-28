@@ -53,7 +53,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee employee = employeeRepo.findById(employeeId).orElseThrow(
                 () -> new ResourceNotFoundException(" Employee is not exist with given ID : " + employeeId)
         );
-        employeeRepo.deleteById(employeeId);
+        employeeRepo.deleteById(employee.getId());
 
     }
 

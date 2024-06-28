@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/employees")
+@RequestMapping("/api/employees")  //route
 public class EmployeeController {
     private EmployeeService employeeService;
+
     @Autowired
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;

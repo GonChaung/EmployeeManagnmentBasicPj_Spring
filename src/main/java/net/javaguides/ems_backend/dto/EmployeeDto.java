@@ -15,3 +15,7 @@ public class EmployeeDto {
     private String lastName;
     private String email;
 }
+// connect directly with API
+// security
+// validation
+// necessary
